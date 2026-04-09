@@ -10,4 +10,4 @@
 ../Core/Src/main.c:546:6:HAL_TIM_PeriodElapsedCallback	3
 ../Core/Src/main.c:559:6:HAL_TIM_PWM_PulseFinishedCallback	1
 ../Core/Src/main.c:576:6:HAL_UARTEx_RxEventCallback	11
-../Core/Src/main.c:629:6:Error_Handler	1
+../Core/Src/main.c:626:6:Error_Handler	1

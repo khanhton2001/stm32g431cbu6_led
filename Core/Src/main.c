@@ -602,13 +602,10 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size)
         uint8_t G = rs485_rx_buf[start_idx + 4];
         uint8_t B = rs485_rx_buf[start_idx + 5];
 
-        if (channel == 1)
+        if (channel == 1 || channel == 2)
         {
           WS2812_SetColor(&LED_channel_A, R, G, B);
           WS2812_Update(&LED_channel_A);
-        }
-        else if (channel == 2)
-        {
           WS2812_SetColor(&LED_channel_B, R, G, B);
           WS2812_Update(&LED_channel_B);
         }
