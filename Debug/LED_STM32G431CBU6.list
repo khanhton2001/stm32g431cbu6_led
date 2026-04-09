@@ -1862,9 +1862,9 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
  8000daa:	4b46      	ldr	r3, [pc, #280]	@ (8000ec4 <HAL_TIM_Base_MspInit+0x15c>)
  8000dac:	2280      	movs	r2, #128	@ 0x80
  8000dae:	611a      	str	r2, [r3, #16]
-    hdma_tim2_ch4.Init.PeriphDataAlignment = DMA_PDATAALIGN_HALFWORD;
+    hdma_tim2_ch4.Init.PeriphDataAlignment = DMA_PDATAALIGN_WORD;
  8000db0:	4b44      	ldr	r3, [pc, #272]	@ (8000ec4 <HAL_TIM_Base_MspInit+0x15c>)
- 8000db2:	f44f 7280 	mov.w	r2, #256	@ 0x100
+ 8000db2:	f44f 7200 	mov.w	r2, #512	@ 0x200
  8000db6:	615a      	str	r2, [r3, #20]
     hdma_tim2_ch4.Init.MemDataAlignment = DMA_MDATAALIGN_HALFWORD;
  8000db8:	4b42      	ldr	r3, [pc, #264]	@ (8000ec4 <HAL_TIM_Base_MspInit+0x15c>)
